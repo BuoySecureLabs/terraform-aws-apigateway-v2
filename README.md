@@ -72,7 +72,7 @@ module "api_gateway" {
   routes = {
     "POST /" = {
       integration = {
-        uri                    = "arn:aws:lambda:eu-west-1:052235179155:function:my-function"
+        uri                    = "arn:aws:lambda:us-east-1:052235179155:function:my-function"
         payload_format_version = "2.0"
         timeout_milliseconds   = 12000
       }
@@ -89,7 +89,7 @@ module "api_gateway" {
 
     "$default" = {
       integration = {
-        uri = "arn:aws:lambda:eu-west-1:052235179155:function:my-default-function"
+        uri = "arn:aws:lambda:us-east-1:052235179155:function:my-default-function"
       }
     }
   }

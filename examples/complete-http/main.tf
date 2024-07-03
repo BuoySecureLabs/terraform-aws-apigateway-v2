@@ -1,10 +1,7 @@
-provider "aws" {
-  region = local.region
-}
 
 locals {
   name   = "ex-${basename(path.cwd)}"
-  region = "eu-west-1"
+  region = "us-east-1"
 
   tags = {
     Example    = local.name

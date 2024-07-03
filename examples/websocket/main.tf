@@ -4,7 +4,7 @@ provider "aws" {
 
 locals {
   name   = "ex-${basename(path.cwd)}"
-  region = "eu-west-1"
+  region = "us-east-1"
 
   dynamodb_table_name = local.name
   dynamodb_crud_permissions = {

@@ -66,7 +66,7 @@ module "wrapper" {
 
 ## Example: Manage multiple S3 buckets in one Terragrunt layer
 
-`eu-west-1/s3-buckets/terragrunt.hcl`:
+`us-east-1/s3-buckets/terragrunt.hcl`:
 
 ```hcl
 terraform {
